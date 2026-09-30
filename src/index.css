@@ -1,0 +1,250 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #ffffff;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+
+/* =========================
+   Home - Hero
+========================= */
+
+.borrowly-hero {
+  background: #f7f7f5;
+}
+
+.borrowly-search {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 7px 8px 7px 15px;
+  display: flex;
+  align-items: center;
+  max-width: 620px;
+}
+
+.borrowly-search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.borrowly-search button {
+  border: none;
+  background: #222;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.borrowly-search button:hover {
+  background: #000;
+}
+
+
+/* =========================
+   Home - Featured Item
+========================= */
+
+.hero-card {
+  background: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 22px;
+  max-width: 390px;
+  margin: auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.hero-card-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-preview {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.item-image {
+  width: 85px;
+  height: 85px;
+  background: #eeeeeb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+}
+
+
+/* =========================
+   Home - Categories
+========================= */
+
+.category-card {
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  padding: 25px 20px;
+  transition: 0.2s;
+  background: #ffffff;
+}
+
+.category-card:hover {
+  border-color: #999;
+  transform: translateY(-2px);
+}
+
+.category-card span {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.category-card h6 {
+  margin: 0;
+}
+
+
+/* =========================
+   Browse Page
+========================= */
+
+.browse-page {
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.browse-search {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  padding: 9px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.browse-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.browse-select {
+  height: 46px;
+  border-color: #ddd;
+  font-size: 14px;
+}
+
+
+/* =========================
+   Item Cards
+========================= */
+
+.borrow-item-card {
+  background: white;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+.borrow-item-card:hover {
+  transform: translateY(-3px);
+  border-color: #cfcfcf;
+}
+
+.borrow-item-image {
+  height: 210px;
+  background: #eeeeeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.borrow-item-image > i {
+  font-size: 65px;
+  color: #555;
+}
+
+
+/* =========================
+   Favorite Button
+========================= */
+
+.favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.favorite-btn:hover {
+  background: #f5f5f5;
+}
+
+
+/* =========================
+   Item Category
+========================= */
+
+.item-category {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+  .borrowly-hero {
+    padding: 50px 0;
+  }
+
+  .borrowly-search {
+    max-width: 100%;
+  }
+
+  .borrowly-search button {
+    padding: 10px 15px;
+  }
+
+  .hero-card {
+    margin-top: 20px;
+  }
+
+  .borrow-item-image {
+    height: 180px;
+  }
+
+}
