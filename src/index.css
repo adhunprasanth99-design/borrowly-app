@@ -12,9 +12,7 @@ body {
 }
 
 
-/* =========================
-   Home - Hero
-========================= */
+
 
 .borrowly-hero {
   background: #f7f7f5;
@@ -52,9 +50,7 @@ body {
 }
 
 
-/* =========================
-   Home - Featured Item
-========================= */
+
 
 .hero-card {
   background: white;
@@ -92,9 +88,7 @@ body {
 }
 
 
-/* =========================
-   Home - Categories
-========================= */
+
 
 .category-card {
   border: 1px solid #e4e4e4;
@@ -120,9 +114,6 @@ body {
 }
 
 
-/* =========================
-   Browse Page
-========================= */
 
 .browse-page {
   background: #fafafa;
@@ -153,9 +144,7 @@ body {
 }
 
 
-/* =========================
-   Item Cards
-========================= */
+
 
 .borrow-item-card {
   background: white;
@@ -185,9 +174,6 @@ body {
 }
 
 
-/* =========================
-   Favorite Button
-========================= */
 
 .favorite-btn {
   position: absolute;
@@ -209,9 +195,7 @@ body {
 }
 
 
-/* =========================
-   Item Category
-========================= */
+
 
 .item-category {
   font-size: 12px;
@@ -220,10 +204,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-
-/* =========================
-   Responsive Design
-========================= */
 
 @media (max-width: 768px) {
 
