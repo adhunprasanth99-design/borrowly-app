@@ -72,13 +72,12 @@ function ItemDetails() {
       return;
     }
 
-    // Owner cannot request own item
     if (currentUser.name === item.ownerName) {
       alert("You cannot request your own item.");
       return;
     }
 
-    // Availability check
+  
     if (item.available === false) {
       alert("This item is currently borrowed.");
       return;
@@ -156,7 +155,7 @@ function ItemDetails() {
     );
   }
 
-  // Check whether current user owns this item
+  
   const isOwner =
     currentUser &&
     currentUser.name === item.ownerName;
@@ -166,7 +165,6 @@ function ItemDetails() {
 
       <div className="container py-5">
 
-        {/* Back button */}
         <Link
           to="/browse"
           className="text-dark text-decoration-none"
@@ -177,7 +175,7 @@ function ItemDetails() {
 
         <div className="row mt-4 g-5">
 
-          {/* ================= IMAGE ================= */}
+          
 
           <div className="col-lg-6">
 
@@ -206,7 +204,7 @@ function ItemDetails() {
 
           </div>
 
-          {/* ================= DETAILS ================= */}
+          
 
           <div className="col-lg-6">
 
@@ -236,7 +234,6 @@ function ItemDetails() {
               {item.ownerName}
             </p>
 
-            {/* ================= AVAILABILITY ================= */}
 
             {item.available === false ? (
               <div className="alert alert-warning">
@@ -260,7 +257,7 @@ function ItemDetails() {
               </div>
             )}
 
-            {/* ================= PRICE ================= */}
+            {/*PRICE  */}
 
             <div className="mb-4">
 
@@ -281,9 +278,9 @@ function ItemDetails() {
 
             <hr className="my-4" />
 
-            {/* ================================================= */}
+           
             {/* OWNER VIEW */}
-            {/* ================================================= */}
+         
 
             {isOwner ? (
 
@@ -302,9 +299,9 @@ function ItemDetails() {
 
             ) : item.available === false ? (
 
-              /* ================================================= */
-              /* ITEM BORROWED */
-              /* ================================================= */
+             
+             
+             
 
               <div>
 
@@ -328,9 +325,9 @@ function ItemDetails() {
 
             ) : (
 
-              /* ================================================= */
+             
               /* OTHER USER REQUEST FORM */
-              /* ================================================= */
+            
 
               <>
 

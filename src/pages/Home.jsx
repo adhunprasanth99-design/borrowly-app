@@ -42,7 +42,7 @@ function Home() {
   return (
     <div>
 
-      {/* ================= HERO SECTION ================= */}
+      {/* HERO SECTION  */}
 
       <section className="borrowly-hero">
 
@@ -183,7 +183,7 @@ function Home() {
 
       </section>
 
-      {/* ================= CATEGORIES ================= */}
+      
 
       <section className="py-5">
 
@@ -244,7 +244,7 @@ function Home() {
 
       </section>
 
-      {/* ================= HOW IT WORKS ================= */}
+     
 
       <section className="py-5 bg-light">
 
@@ -264,7 +264,7 @@ function Home() {
 
           <div className="row g-4">
 
-            {/* STEP 1 */}
+          
 
             <div className="col-md-4">
 
@@ -297,7 +297,7 @@ function Home() {
 
             </div>
 
-            {/* STEP 2 */}
+           
 
             <div className="col-md-4">
 
@@ -330,7 +330,7 @@ function Home() {
 
             </div>
 
-            {/* STEP 3 */}
+           
 
             <div className="col-md-4">
 

@@ -94,7 +94,7 @@ function Browse() {
   return (
     <div className="container py-5">
 
-      {/* ================= HEADING ================= */}
+      {/* HEADING */}
 
       <div className="text-center mb-5">
 
@@ -108,7 +108,7 @@ function Browse() {
 
       </div>
 
-      {/* ================= SEARCH & CATEGORY ================= */}
+     
 
       <div className="row g-3 mb-5">
 
@@ -174,7 +174,7 @@ function Browse() {
 
       </div>
 
-      {/* ================= RESULT COUNT ================= */}
+      
 
       <div className="d-flex justify-content-between align-items-center mb-3">
 
@@ -203,7 +203,7 @@ function Browse() {
 
       </div>
 
-      {/* ================= ITEMS ================= */}
+      {/* ITEMS */}
 
       <div className="row g-4">
 

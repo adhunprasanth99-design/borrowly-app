@@ -43,7 +43,7 @@ function AddItem() {
       return;
     }
 
-    // Image is compulsory
+   
     if (!image) {
       alert("Please select an image for the item.");
       return;
@@ -54,16 +54,14 @@ function AddItem() {
     try {
       setUploading(true);
 
-      // =========================
       // CLOUDINARY IMAGE UPLOAD
-      // =========================
+    
 
       const formData = new FormData();
 
       formData.append("file", image);
 
-      // IMPORTANT:
-      // This must exactly match your Cloudinary preset
+      
       formData.append("upload_preset", "borrowly-upload");
 
       console.log(
@@ -115,9 +113,8 @@ function AddItem() {
       const imageURL =
         cloudinaryData.secure_url;
 
-      // =========================
       // CREATE ITEM
-      // =========================
+     
 
       const newItem = {
         ...item,
@@ -131,9 +128,9 @@ function AddItem() {
         newItem
       );
 
-      // =========================
+    
       // SAVE TO JSON SERVER
-      // =========================
+   
 
       const result =
         await addItemAPI(newItem);
