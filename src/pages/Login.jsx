@@ -1,10 +1,8 @@
-import  { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { getUserByEmailAPI } from '../services/allAPI'
 
 function Login() {
-
-  const navigate = useNavigate()
 
   const [loginData, setLoginData] = useState({
     email: '',
@@ -53,7 +51,7 @@ function Login() {
 
       alert('Login successful!')
 
-      navigate('/')
+      window.location.href = '/'
 
     } catch (error) {
 
